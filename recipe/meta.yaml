@@ -13,7 +13,7 @@ source:
     - macos-portability.patch  # [osx]
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # SOVERSION changed in patch releases: https://github.com/conda-forge/imath-feedstock/issues/7
     - {{ pin_subpackage(name|lower, max_pin='x.x.x') }}
